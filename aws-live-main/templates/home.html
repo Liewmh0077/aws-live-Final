@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Company</title>
+    <style>
+        body {
+            background-image: url("https://liewminhui-s3-bucket.s3.amazonaws.com/123.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #444;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        main {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            display: block;
+            width: 300px;
+            height: 80px;
+            margin: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #444;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Page</h1>
+    </header>
+
+    <main>
+        <form action="/get" autocomplete="on" method = "GET">
+            <button type="submit">Get Employee Information</button>
+        </form>
+        <form action="/add" autocomplete="on" method = "GET">
+            <button type="submit">Add Employee Data</button>
+        </form>
+        <form action="/delete" autocomplete="on" method = "GET">
+            <button type="submit">Delete Employee Data</button>
+        </form>
+        <form action="/about" autocomplete="on" method = "GET">
+            <button type="submit">About Us</button>
+        </form>
+    </main>
+</body>
+</html>
